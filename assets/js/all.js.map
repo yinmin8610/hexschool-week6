@@ -1,1 +1,1 @@
-{"version":3,"sources":["all.js"],"names":[],"mappings":"AAAA","file":"all.js","sourcesContent":[""]}
+{"version":3,"sources":["all.js"],"names":["swiper","Swiper","slidesPerView","spaceBetween","centeredSlides"],"mappings":";;AAAA,IAAIA,MAAM,GAAG,IAAIC,MAAJ,CAAW,mBAAX,EAAgC;AAC3CC,EAAAA,aAAa,EAAE,CAD4B;AAE3CC,EAAAA,YAAY,EAAE,EAF6B;AAG3CC,EAAAA,cAAc,EAAE;AAH2B,CAAhC,CAAb","file":"all.js","sourcesContent":["var swiper = new Swiper('.swiper-container', {\n  slidesPerView: 4,\n  spaceBetween: 30,\n  centeredSlides: true,\n});"]}
