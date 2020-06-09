@@ -1,0 +1,50 @@
+.swiper-slide {
+  .card {
+    &-img-top {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      @include media-breakpoint-up(md) {
+        width: 350px;
+        height: 350px;
+      }
+    }
+    &-body {
+      margin-top: 0.5rem;
+    }
+    &-title {
+      margin-bottom: 4px;
+    }
+  }
+}
+.card-columns {
+  column-count: 1 !important;
+  @include media-breakpoint-up(sm) {
+    column-count: 2 !important;
+  }
+  @include media-breakpoint-up(md) {
+    column-count: 3 !important;
+  }
+  .card{
+    margin-right: 0;
+    margin-bottom: 3rem;
+    &-img-text{
+      position: relative;
+      &::after{
+        position: absolute;
+        content:'On Sale';
+        right:0.5rem;
+        top:0.5rem;
+        color: white;
+        font-weight: bold;
+      }
+    }
+    &-img-top {
+      object-fit: cover;
+      max-height: 160px;
+      @include media-breakpoint-up(md) {
+        max-height: inherit;
+      }
+    }
+  }
+}
