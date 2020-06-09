@@ -1,0 +1,123 @@
+---
+title: CRAFTsMAN 產品
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+  <nav class=" nav-scroller bg-light mb-7">
+    <ul class="nav nav-underline container" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="home"
+        aria-selected="true">ALL<sup>24</sup></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="bowl-tab" data-toggle="tab" href="#bowl" role="tab" aria-controls="home"
+        aria-selected="true">BOWL<sup>10</sup></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="cup-tab" data-toggle="tab" href="#cup" role="tab" aria-controls="home"
+        aria-selected="true">CUP<sup>8</sup></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="plate-tab" data-toggle="tab" href="#plate" role="tab" aria-controls="home"
+        aria-selected="true">PLATE<sup>3</sup></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="vase-tab" data-toggle="tab" href="#vase" role="tab" aria-controls="home"
+        aria-selected="true">VASE<sup>3</sup></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+
+    <div class="tab-content" id="myTabContent">
+
+      <section class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        <ul class="card-columns p-0">
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-1.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Tatami Cup</h5>
+              <p class="card-text">NT$1,080<span class="text-secondary ml-2"><s>NT$1,200</s></span></p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-6.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Limdae Cup</h5>
+              <p class="card-text">NT$2,400</p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-8.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Kabi Mug</h5>
+              <p class="card-text">NT$980</p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-5.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Hana Vase</h5>
+              <p class="card-text">NT$3,600<span class="text-secondary ml-2"><s>NT$3,880</s></span></p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-3.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Sumo Vase</h5>
+              <p class="card-text">NT$4,800</p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-9.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Shiro Plate</h5>
+              <p class="card-text">NT$1,200</p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-4.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Baifan Bowl</h5>
+              <p class="card-text">NT$1,800<span class="text-secondary ml-2"><s>NT$1,980</s></span></p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-7.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Ceramic Vase</h5>
+              <p class="card-text">NT$3,600</p>
+            </div>
+          </li>
+          <li class="card mb-4 mb-md-7">
+            <img src="./assets/images/img-2.jpg" class="card-img-top mb-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Couple Collection</h5>
+              <p class="card-text">NT$2,800</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="tab-pane fade" id="bowl" role="tabpanel" aria-labelledby="bowl-tab">...</section>
+      <section class="tab-pane fade" id="cup" role="tabpanel" aria-labelledby="cup-tab">...</section>
+      <section class="tab-pane fade" id="plate" role="tabpanel" aria-labelledby="plate-tab">...</section>
+      <section class="tab-pane fade" id="vase" role="tabpanel" aria-labelledby="vase-tab">...</section>
+    </div>
+
+  
+
+    <nav class="mb-7">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</main>

@@ -1,0 +1,13 @@
+html{
+  overflow-x: hidden
+}
+body{
+  overflow-x: hidden;
+  height: 100%
+}
+ul {
+  list-style: none;
+}
+button:focus {
+  outline: 0;
+}

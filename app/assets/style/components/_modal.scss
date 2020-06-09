@@ -1,0 +1,25 @@
+.modal.right .modal-dialog {
+  position: fixed;
+  right: 0;
+  margin: auto;
+  width: 540px;
+  height: 100%;
+  transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
