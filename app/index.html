@@ -8,12 +8,11 @@ current: index
 
 <main class="main">
 
-  <section class="container-fluid mb-md-8 mb-7" style="position: relative;height:100vh;">
+  <section class="banner container-fluid mb-md-8 mb-7">
     <div class="row justify-content-end">
-      <div class="col-md-6 bg-cover" style="position: absolute; top:0;bottom: 0;
-      background-image: url('./assets/images/index-1.jpg'); margin-top:-77px;">
+      <div class="banner-img col-md-6 bg-cover">
       </div>
-      <div class="container" style="height:100vh;">
+      <div class="banner-body container">
         <div class="row justify-content-start text-white text-md-dark h-100">
           <div class="col-md-6 d-flex flex-column justify-content-center">
             <h1 class="title mb-4 text-white text-center font-weight-bold text-md-dark text-md-left">Enjoy Your
@@ -92,15 +91,14 @@ current: index
     </div>
   </section>
 
-  <section class="text-white mb-7 mb-md-8 py-4 p-md-0"
-    style="background-image: url('./assets/images/index-5.jpg');height:400px;background-position: center center; background-repeat: no-repeat; background-size: cover;">
+  <section class="slogan text-white bg-cover mb-7 mb-md-8 py-4 p-md-0">
     <div class="container">
-      <div class="row d-flex flex-column flex-md-row justify-content-between align-items-md-center h-100">
-        <div class="col-6 col-md-9">
+      <div class="row flex-column flex-md-row justify-content-between align-items-md-center h-100">
+        <div class="col-md-9">
           <h2>“I want to make the life <br>more simple by crafts.”</h2>
         </div>
-        <div class="col-6 col-md-3 d-flex flex-column justify-content-end d-md-block">
-          <p class="mb-1"><small>Art Director</small></p>
+        <div class="col-md-3">
+          <p class="mb-1">Art Director</p>
           <p class="h4 mb-3">Hsiao-Ming Chen</p>
           <a class="text-decoration-none font-weight-bold mr-4" href="#">Instagram</a>
           <a class="text-decoration-none font-weight-bold" href="#">Twitter</a>
@@ -110,7 +108,8 @@ current: index
   </section>
 
   <section class="mb-7 mb-md-8">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <!-- Bootstrap 的輪播圖做法 -->
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class=" d-flex">
@@ -217,9 +216,58 @@ current: index
           </div>
         </div>
       </div>
+    </div> -->
+
+    <!-- Swiper 套件 -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/img-1.jpg" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Tatami Cup</h6>
+              <p class="card-text">NT$1,080<span class="text-secondary ml-2"><s>NT$1,200</s></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/img-2.jpg" class="d-block" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Couple Collection</h6>
+              <p class="card-text">NT$2,800</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/img-3.jpg" class="d-block" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Brotherhood Vase</h6>
+              <p class="card-text">NT$4,800</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/img-4.jpg" class="d-block" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Baifan Bowl</h6>
+              <p class="card-text">NT$1,800</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img class="card-img-top" src="./assets/images/img-4.jpg" class="d-block" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Baifan Bowl</h6>
+              <p class="card-text">NT$1,800</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
 
   </section>
 
