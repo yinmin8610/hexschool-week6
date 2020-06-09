@@ -1,0 +1,21 @@
+.product-info {
+  margin-top: -35px;
+  margin-left: 0px;
+  height: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 2px;
+  @include media-breakpoint-up(sm) {
+    margin-left: -65px;
+    padding: 2rem 0 2rem 2rem;
+    transform: translateY(50%);
+  }
+  .input-text {
+    border: 0;
+    text-align: center;
+    width: 30px;
+    &:focus {
+      outline: 0;
+    }
+  }
+}

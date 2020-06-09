@@ -25,23 +25,3 @@
     }
   }
 }
-
-.card-columns {
-  column-count: 1 !important;
-  @include media-breakpoint-up(sm) {
-    column-count: 2 !important;
-  }
-  @include media-breakpoint-up(md) {
-    column-count: 3 !important;
-  }
-  .card{
-    margin-right: 0;
-  }
-  .card-img-top {
-    object-fit: cover;
-    max-height: 160px;
-    @include media-breakpoint-up(md) {
-      max-height: inherit;
-    }
-  }
-}

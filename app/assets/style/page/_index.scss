@@ -1,30 +1,29 @@
-.card {
-  margin-right: 30px;
-  border: 0;
-  width: 350px;
-  &-img-top {
-    height: 350px;
-    object-fit: cover;
+.banner {
+  position: relative;
+  height: 100vh;
+  &-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-image: url("../../assets/images/index-1.jpg");
+    margin-top: -77px;
   }
   &-body {
-    padding: 0;
-    margin-top: 0.5rem;
-  }
-  &-title {
-    margin-bottom: 4px;
+    height: 100vh;
   }
 }
-.card-columns .card {
-  margin-bottom: 3rem;
-}
-.navbar{
-    z-index: 3 !important;
+.slogan {
+  background-image: url("../../assets/images/index-5.jpg");
+  height: 400px;
 }
 .subtitle {
   margin-bottom: 107px;
 }
 .btn-size {
   width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 160px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -32,17 +31,14 @@
     color: #333 !important;
   }
 }
-@media (min-width: 768px) {
-  .btn-size {
-    width: 160px;
-  }
+.navbar {
+  z-index: 3 !important;
 }
-
-@media screen and (max-width: 992px) {
-   .navbar-list {
+@media screen and (max-width: 768px) {
+  .navbar-list {
     position: fixed;
     left: 0;
-    right:0;
+    right: 0;
     top: 0;
     bottom: 0;
     background-color: #ffffff;
@@ -50,9 +46,8 @@
     .nav-link {
       border-bottom: 1px solid #00000062;
     }
-    .dropdown-item{
+    .dropdown-item {
       padding-left: 0;
     }
   }
-  
 }
