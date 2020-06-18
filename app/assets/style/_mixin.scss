@@ -1,5 +1,7 @@
-.bg-cover {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@mixin banner($url, $height) {
+	background-image: url($url);
+	height: $height;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }

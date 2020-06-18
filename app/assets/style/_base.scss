@@ -11,3 +11,10 @@ ul {
 button:focus {
   outline: 0;
 }
+
+img{
+  object-fit: cover;
+}
+a:hover, .btn-link:hover, .btn-link:focus{
+  text-decoration: none;
+}

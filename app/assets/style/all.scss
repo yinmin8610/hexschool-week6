@@ -2,18 +2,19 @@
 @import "./helpers/variables";
 @import "bootstrap";
 @import "swiper";
+@import "navigation";
 
 @import "base";
 @import "mixin";
+@import "utils";
 @import "components/modal";
 @import "components/card";
+@import "components/breadcrumb";
+@import "components/navbar";
 @import "components/carousel";
 
 @import "page/index";
-@import "page/product";
 @import "page/detail";
-
-@import "layout/header";
-@import "layout/footer";
+@import "page/checkout";
 
 

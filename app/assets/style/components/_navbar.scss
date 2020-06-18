@@ -1,3 +1,28 @@
+.navbar{
+  z-index: 3;
+  color:$white;
+}
+.navbar-brand{
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  .navbar-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 16px 15px;
+    .nav-link {
+      border-bottom: 1px solid #00000062;
+    }
+    .dropdown-item {
+      padding-left: 0;
+    }
+  }
+}
+//product 頁面
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -25,3 +50,4 @@
     }
   }
 }
+

@@ -1,0 +1,23 @@
+.checkout-banner {
+  position: relative;
+  height: 100vh;
+  &-img {
+    @include banner("../../assets/images/done.jpg", 100vh);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: -77px;
+  }
+  &-body {
+    height: 100vh;
+    .btn-size {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 255px;
+      }
+    }
+  }
+}
+.checkout-btn:focus{
+  box-shadow: none;
+}

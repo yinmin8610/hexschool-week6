@@ -1,0 +1,19 @@
+.w-md-75{
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .text-md-dark {
+    color: #333 !important;
+  }
+}
+.input-text {
+  border: 0;
+  text-align: center;
+  width: 30px;
+  &:focus {
+    outline: 0;
+  }
+}
