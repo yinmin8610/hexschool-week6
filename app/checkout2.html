@@ -1,10 +1,257 @@
----
-title: 付款
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>付款</title>
 
-<main class="main">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-</main>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
+
+        <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="material-icons text-white">dehaze</i>
+        </button>
+
+        <a class="navbar-brand text-white text-md-dark font-weight-bold" href="index.html">CRAFTsMAN</a>
+
+        <a class="nav-link pr-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
+          <i class="material-icons text-white">shopping_cart</i>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-list navbar-nav w-100 d-flex justify-content-md-end">
+            <li class="d-flex d-md-none mb-5">
+              <a href="#" class="back text-dark mr-auto"><i class="material-icons">arrow_back</i></a>
+              <a href="#" class="cart text-dark"><i class="material-icons">shopping_cart</i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pr-7" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Product</a>
+              <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="product.html">All<sup>24</sup></a>
+                <a class="dropdown-item" href="#">Bowl<sup>10</sup></a>
+                <a class="dropdown-item" href="#">Cup<sup>8</sup></a>
+                <a class="dropdown-item" href="#">Plate<sup>3</sup></a>
+                <a class="dropdown-item" href="#">Vase<sup>3</sup></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-7" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-7" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-7">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent p-0 mb-5">
+              <li class="breadcrumb-item"><a href="detail.html">Cart</a></li>
+              <li class="breadcrumb-item"><a href="checkout1.html">Information</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Payment</li>
+            </ol>
+          </nav>
+          <form>
+            <h2 class="h5">Information</h2>
+            <div class="form-group mb-5">
+              <div class="accordion" id="accordionExample">
+                <div class="card border rounded-top">
+                  <div class="card-header bg-white" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="checkout-btn btn btn-link btn-block text-left rounded-0" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Contact
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body text-secondary p-3 ">
+                      <small class="d-block">Joanne Lin</small>
+                      <small class="d-block">Joanne@mail.com</small>
+                        <small class="d-block">+886 912-345-678</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border rounded-bottom">
+                  <div class="card-header bg-white" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="checkout-btn btn btn-link btn-block text-left collapsed rounded-0" type="button"
+                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Ship to
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body text-secondary p-3 ">
+                      <small class="d-block">3F., No. 2, Ln. 1, Hello 2nd Rd.,</small>
+                      <small class="d-block">Woohoo Dist., Kaohsiung City 806,</small>
+                      <small class="d-block">Taiwan</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <h2 class="h5">Credit Card</h2>
+            <div class="form-group">
+              <label for="cardNumber" class="sr-only">Card number</label>
+              <input type="text" class="form-control form-control-lg" id="cardNumber" placeholder="Card number">
+            </div>
+            <div class="form-group">
+              <label for="cardName" class="sr-only">Name on card</label>
+              <input type="text" class="form-control form-control-lg" id="cardName" placeholder="Name on card">
+            </div>
+            <div class="form-group form-row mb-5">
+              <div class="col">
+                <label for="expirationDate" class="sr-only">Expiration date</label>
+                <input type="text" class="form-control form-control-lg" id="expirationDate"
+                  placeholder="Expiration date (MM / YY)">
+              </div>
+              <div class="col">
+                <label for="securityCode" class="sr-only">Security code</label>
+                <input type="text" class="form-control form-control-lg" id="securityCode" placeholder="Security code">
+              </div>
+            </div>
+            <div class="d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-md-center mb-5">
+              <a href="detail.html" class="d-flex align-items-center"><i
+                  class="material-icons">keyboard_arrow_left</i>Return to information</a>
+              <a class="btn btn-primary btn-lg" href="checkout3.html" role="button">Pay now</a>
+            </div>
+          </form>
+          <ul class="border-top d-md-flex text-secondary list-unstyled">
+            <li class="list-item"><a href="#" class="text-muted pr-3">Purchase Policy</a></li>
+            <li class="list-item"><a href="#" class="text-muted px-3">Privacy Policy</a></li>
+            <li class="list-item"><a href="#" class="text-muted px-3">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-5">
+          <a class="btn btn-light d-md-none d-flex justify-content-between" data-toggle="collapse"
+            href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+            <p class="mb-0">Order Summary</p>
+            <p class="mb-0">NT$4,760</p>
+          </a>
+
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body bg-light p-5">
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between align-items-center mb-3">
+                  <img width="48" height="48" src="./assets/images/img-1.jpg" alt="">
+                  <h5>Tatami Cup ×1</h5>
+                  <p>NT$1,080</p>
+                </li>
+                <li class="d-flex justify-content-between align-items-center">
+                  <img width="48" height="48" src="./assets/images/img-2.jpg" alt="">
+                  <h5>Baifan Bowl ×2</h5>
+                  <p>NT$3,600</p>
+                </li>
+                <hr>
+              </ul>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between">
+                  <p>Subtotal</p>
+                  <p>NT$4,680</p>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>Shipping</p>
+                  <p>NT$80</p>
+                </li>
+                <hr>
+                <li class="d-flex justify-content-between">
+                  <p>Total</p>
+                  <p>NT$4,760</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal right fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title font-weight-bold" id="cartModalLabel">Cart List<sup class="text-primary">3</sup>
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="material-icons">clear</i></span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="card mb-3">
+            <div class="row">
+              <img src="./assets/images/img-1.jpg" width="112" height="112" alt="...">
+              <div class="card-body p-2 bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title h6 mb-1">Tatami Cup</h5>
+                  <a href="#" class="text-dark"><i class="material-icons">clear</i></a>
+                </div>
+                <p class="card-text mb-3"><small>NT$1,080<span
+                      class="text-secondary ml-2"><s>NT$1,200</s></span></small></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group w-25" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light"><i class="material-icons">remove</i></button>
+                    <input type="text" value="1" class="input-text bg-light" aria-label="Example text with button addon"
+                      aria-describedby="button-addon1">
+                    <button type="button" class="btn btn-light"><i class="material-icons">add</i></button>
+                  </div>
+                  <p class="card-text font-weight-bold">NT$1,080</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <ul class="list-unstyled w-md-75">
+            <li class="d-flex justify-content-between text-secondary">
+              <p>Subtotal</p>
+              <p>NT$4,680</p>
+            </li>
+            <li class="d-flex justify-content-between text-secondary mb-2">
+              <p>Shipping</p>
+              <p>NT$80</p>
+            </li>
+            <li class="d-flex justify-content-between h4 font-weight-bold mb-1">
+              <p>Total</p>
+              <p>NT$4,760</p>
+            </li>
+          </ul>
+          <a href="checkout1.html" class="btn btn-primary btn-lg w-md-75">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>

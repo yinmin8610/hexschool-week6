@@ -1,10 +1,145 @@
----
-title: 付款
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>付款完成</title>
 
-<main class="main">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-</main>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
+
+        <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="material-icons text-white">dehaze</i>
+        </button>
+
+        <a class="navbar-brand text-white text-md-dark font-weight-bold" href="index.html">CRAFTsMAN</a>
+
+        <a class="nav-link pr-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
+          <i class="material-icons text-white">shopping_cart</i>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-list navbar-nav w-100 d-flex justify-content-md-end">
+            <li class="d-flex d-md-none mb-5">
+              <a href="#" class="back text-dark mr-auto"><i class="material-icons">arrow_back</i></a>
+              <a href="#" class="cart text-dark"><i class="material-icons">shopping_cart</i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pr-7" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Product</a>
+              <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="product.html">All<sup>24</sup></a>
+                <a class="dropdown-item" href="#">Bowl<sup>10</sup></a>
+                <a class="dropdown-item" href="#">Cup<sup>8</sup></a>
+                <a class="dropdown-item" href="#">Plate<sup>3</sup></a>
+                <a class="dropdown-item" href="#">Vase<sup>3</sup></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-7" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-7" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="checkout-banner container-fluid">
+      <div class="row justify-content-end">
+        <div class="checkout-banner-img col-md-6 bg-cover">
+        </div>
+        <div class="checkout-banner-body container">
+          <div class="row justify-content-start text-white text-md-dark h-100">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h1 class="title mb-4 text-white text-center font-weight-bold text-md-dark text-md-left">Well Done!</h1>
+              <p
+                class="subtitle h4 text-center font-weight-normal text-secondary text-md-secondary text-md-left mb-md-7">
+                Your order has been received. We’ll email <br>you an order confirmation with details.</p>
+              <a class="btn btn-primary btn-lg btn-size" href="product.html" role="button">Continue shopping</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal right fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title font-weight-bold" id="cartModalLabel">Cart List<sup class="text-primary">3</sup>
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="material-icons">clear</i></span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="card mb-3">
+            <div class="row">
+              <img src="./assets/images/img-1.jpg" width="112" height="112" alt="...">
+              <div class="card-body p-2 bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title h6 mb-1">Tatami Cup</h5>
+                  <a href="#" class="text-dark"><i class="material-icons">clear</i></a>
+                </div>
+                <p class="card-text mb-3"><small>NT$1,080<span
+                      class="text-secondary ml-2"><s>NT$1,200</s></span></small></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group w-25" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-light"><i class="material-icons">remove</i></button>
+                    <input type="text" value="1" class="input-text bg-light" aria-label="Example text with button addon"
+                      aria-describedby="button-addon1">
+                    <button type="button" class="btn btn-light"><i class="material-icons">add</i></button>
+                  </div>
+                  <p class="card-text font-weight-bold">NT$1,080</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <ul class="list-unstyled w-md-75">
+            <li class="d-flex justify-content-between text-secondary">
+              <p>Subtotal</p>
+              <p>NT$4,680</p>
+            </li>
+            <li class="d-flex justify-content-between text-secondary mb-2">
+              <p>Shipping</p>
+              <p>NT$80</p>
+            </li>
+            <li class="d-flex justify-content-between h4 font-weight-bold mb-1">
+              <p>Total</p>
+              <p>NT$4,760</p>
+            </li>
+          </ul>
+          <a href="checkout1.html" class="btn btn-primary btn-lg w-md-75">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>
