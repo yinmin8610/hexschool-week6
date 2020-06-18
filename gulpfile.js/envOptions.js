@@ -37,6 +37,7 @@ let envOptions = {
     includePaths: [
       `${nodePath}/bootstrap/scss`,
       `${nodePath}/swiper/`,
+      `${nodePath}/swiper/components/navigation`,
     ],
     path: `${distPath}/assets/style`,
   },
