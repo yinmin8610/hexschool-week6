@@ -26,8 +26,8 @@
 
         <a class="navbar-brand text-white text-md-dark font-weight-bold" href="index.html">CRAFTsMAN</a>
 
-        <a class="nav-link pr-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
-          <i class="material-icons text-white">shopping_cart</i>
+        <a class="nav-link pr-0 order-md-3 text-dark" href="#" data-toggle="modal" data-target="#cartModal">
+          <i class="material-icons">shopping_cart</i>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,9 +37,9 @@
               <a href="#" class="cart text-dark"><i class="material-icons">shopping_cart</i></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle pr-7" id="navbarDropdown" role="button" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle pr-7 text-dark" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Product</a>
-              <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu border-0 border-md-solid" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="product.html">All<sup>24</sup></a>
                 <a class="dropdown-item" href="#">Bowl<sup>10</sup></a>
                 <a class="dropdown-item" href="#">Cup<sup>8</sup></a>
@@ -48,10 +48,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link pr-7" href="#">Blog</a>
+              <a class="nav-link pr-7 text-dark" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pr-7" href="#">Contact</a>
+              <a class="nav-link pr-7 text-dark" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -72,12 +72,12 @@
           </nav>
           <form>
             <h2 class="h5">Information</h2>
-            <div class="form-group mb-5">
+            <div class="form-group mb-4 mb-md-5">
               <div class="accordion" id="accordionExample">
                 <div class="card border rounded-top">
                   <div class="card-header bg-white" id="headingOne">
                     <h2 class="mb-0">
-                      <button class="checkout-btn btn btn-link btn-block text-left rounded-0" type="button" data-toggle="collapse"
+                      <button class="checkout-btn btn btn-link btn-block text-dark text-left rounded-0 p-3" type="button" data-toggle="collapse"
                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Contact
                       </button>
@@ -96,7 +96,7 @@
                 <div class="card border rounded-bottom">
                   <div class="card-header bg-white" id="headingTwo">
                     <h2 class="mb-0">
-                      <button class="checkout-btn btn btn-link btn-block text-left collapsed rounded-0" type="button"
+                      <button class="checkout-btn btn btn-link btn-block text-dark text-left collapsed rounded-0 p-3" type="button"
                         data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
                         Ship to
@@ -124,65 +124,63 @@
               <label for="cardName" class="sr-only">Name on card</label>
               <input type="text" class="form-control form-control-lg" id="cardName" placeholder="Name on card">
             </div>
-            <div class="form-group form-row mb-5">
-              <div class="col">
+            <div class="form-group form-row mb-4 mb-md-5">
+              <div class="col-12 col-md-6 mb-2">
                 <label for="expirationDate" class="sr-only">Expiration date</label>
                 <input type="text" class="form-control form-control-lg" id="expirationDate"
                   placeholder="Expiration date (MM / YY)">
               </div>
-              <div class="col">
+              <div class="col-12 col-md-6">
                 <label for="securityCode" class="sr-only">Security code</label>
                 <input type="text" class="form-control form-control-lg" id="securityCode" placeholder="Security code">
               </div>
             </div>
-            <div class="d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-md-center mb-5">
-              <a href="detail.html" class="d-flex align-items-center"><i
+            <div class="d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-md-center mb-4 mb-md-5">
+              <a href="detail.html" class="d-flex align-items-center justify-content-center"><i
                   class="material-icons">keyboard_arrow_left</i>Return to information</a>
-              <a class="btn btn-primary btn-lg" href="checkout3.html" role="button">Pay now</a>
+              <a class="btn btn-primary btn-lg mb-4 mb-md-0" href="checkout3.html" role="button">Pay now</a>
             </div>
           </form>
           <ul class="border-top d-md-flex text-secondary list-unstyled">
-            <li class="list-item"><a href="#" class="text-muted pr-3">Purchase Policy</a></li>
-            <li class="list-item"><a href="#" class="text-muted px-3">Privacy Policy</a></li>
-            <li class="list-item"><a href="#" class="text-muted px-3">Terms & Conditions</a></li>
+            <li class="list-item my-3 my-md-2"><a href="#" class="text-muted pr-3">Purchase Policy</a></li>
+            <li class="list-item mb-3 my-md-2"><a href="#" class="text-muted px-md-3">Privacy Policy</a></li>
+            <li class="list-item my-md-2"><a href="#" class="text-muted px-md-3">Terms & Conditions</a></li>
           </ul>
         </div>
 
         <div class="col-12 col-md-5">
-          <a class="btn btn-light d-md-none d-flex justify-content-between" data-toggle="collapse"
+          <a class="btn btn-light d-md-none p-3 d-flex justify-content-between" data-toggle="collapse"
             href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
             <p class="mb-0">Order Summary</p>
             <p class="mb-0">NT$4,760</p>
           </a>
 
           <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body bg-light p-5">
-              <ul class="list-unstyled">
+            <div class="card card-body bg-light p-5 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
                 <li class="d-flex justify-content-between align-items-center mb-3">
                   <img width="48" height="48" src="./assets/images/img-1.jpg" alt="">
                   <h5>Tatami Cup ×1</h5>
                   <p>NT$1,080</p>
                 </li>
-                <li class="d-flex justify-content-between align-items-center">
-                  <img width="48" height="48" src="./assets/images/img-2.jpg" alt="">
+                <li class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
+                  <img width="48" height="48" src="./assets/images/img-4.jpg" alt="">
                   <h5>Baifan Bowl ×2</h5>
                   <p>NT$3,600</p>
                 </li>
-                <hr>
               </ul>
-              <ul class="list-unstyled">
+              <ul class="list-unstyled mb-0">
                 <li class="d-flex justify-content-between">
-                  <p>Subtotal</p>
-                  <p>NT$4,680</p>
+                  <p class="mb-2 mb-md-3">Subtotal</p>
+                  <p class="mb-2 mb-md-3">NT$4,680</p>
                 </li>
-                <li class="d-flex justify-content-between">
+                <li class="d-flex justify-content-between border-bottom mb-3">
                   <p>Shipping</p>
                   <p>NT$80</p>
                 </li>
-                <hr>
                 <li class="d-flex justify-content-between">
-                  <p>Total</p>
-                  <p>NT$4,760</p>
+                  <p class="h4 font-weight-bold mb-0">Total</p>
+                  <p class="h4 font-weight-bold mb-0">NT$4,760</p>
                 </li>
               </ul>
             </div>
