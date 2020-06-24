@@ -1,9 +1,10 @@
 html{
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
-  height: 100%
+  height: 100%;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 ul {
   list-style: none;
@@ -17,4 +18,11 @@ img{
 }
 a:hover, .btn-link:hover, .btn-link:focus{
   text-decoration: none;
+}
+a.text-dark:hover,
+a.text-dark:focus {
+  color: #0E8A00 !important;
+}
+.navbar-brand{
+  font-family: Raleway, sans-serif;
 }
