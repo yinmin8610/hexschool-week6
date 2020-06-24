@@ -12094,6 +12094,7 @@ html {
 body {
   overflow-x: hidden;
   height: 100%;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 ul {
@@ -12113,6 +12114,14 @@ a:hover, .btn-link:hover, .btn-link:focus {
   text-decoration: none;
 }
 
+a.text-dark:hover, a.text-dark:focus {
+  color: #0E8A00 !important;
+}
+
+.navbar-brand {
+  font-family: Raleway, sans-serif;
+}
+
 .w-md-75 {
   width: 100%;
 }
@@ -12126,6 +12135,12 @@ a:hover, .btn-link:hover, .btn-link:focus {
 @media (min-width: 768px) {
   .text-md-dark {
     color: #333 !important;
+  }
+  .text-md-white {
+    color: white !important;
+  }
+  .border-md-solid {
+    border: 1px solid #dee2e6 !important;
   }
 }
 
@@ -12263,7 +12278,6 @@ a:hover, .btn-link:hover, .btn-link:focus {
 
 .navbar {
   z-index: 3;
-  color: #fff;
 }
 
 .navbar-brand {

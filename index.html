@@ -10,36 +10,38 @@
   <link rel="stylesheet" href="./assets/style/all.css">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-0">
+      <nav class="navbar navbar-expand-lg bg-transparent px-0 ">
 
         <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="material-icons text-white">dehaze</i>
+          <i class="material-icons text-white text-md-dark">dehaze</i>
         </button>
 
         <a class="navbar-brand text-white text-md-dark font-weight-bold" href="index.html">CRAFTsMAN</a>
 
-        <a class="nav-link pr-0 order-md-3" href="#" data-toggle="modal" data-target="#cartModal">
+        <a class="nav-link pr-0 order-lg-3" href="#" data-toggle="modal" data-target="#cartModal">
           <i class="material-icons text-white">shopping_cart</i>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-list navbar-nav w-100 d-flex justify-content-md-end">
-            <li class="d-flex d-md-none mb-5">
-              <a href="#" class="back text-dark mr-auto"><i class="material-icons">arrow_back</i></a>
-              <a href="#" class="cart text-dark"><i class="material-icons">shopping_cart</i></a>
+            <li class="nav-item d-flex d-md-none mb-5">
+              <a href="#" class="back text-dark mr-auto text-dark text-md-white"><i class="material-icons">arrow_back</i></a>
+              <a href="#" class="cart text-dark text-dark text-md-white"><i class="material-icons">shopping_cart</i></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle pr-7" id="navbarDropdown" role="button" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle pr-7 text-dark text-md-white" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Product</a>
-              <div class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu border-0 border-md-solid" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="product.html">All<sup>24</sup></a>
                 <a class="dropdown-item" href="#">Bowl<sup>10</sup></a>
                 <a class="dropdown-item" href="#">Cup<sup>8</sup></a>
@@ -48,10 +50,10 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link pr-7" href="#">Blog</a>
+              <a class="nav-link pr-7 text-dark text-md-white" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pr-7" href="#">Contact</a>
+              <a class="nav-link pr-7 text-dark text-md-white" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -392,7 +394,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group w-25" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-light"><i class="material-icons">remove</i></button>
-                    <input type="text" value="1" class="input-text bg-light"
+                    <input type="number" value="1" class="input-text bg-light"
                       aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <button type="button" class="btn btn-light"><i class="material-icons">add</i></button>
                   </div>
